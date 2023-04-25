@@ -1,0 +1,143 @@
+04/24/2023 07:29:11 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+Use FP16 precision: False
+
+04/24/2023 07:29:11 - WARNING - datasets.builder - Using custom data configuration default-1982a0ff2f69d43b
+04/24/2023 07:29:11 - WARNING - datasets.builder - Reusing dataset csv (/root/.cache/huggingface/datasets/csv/default-1982a0ff2f69d43b/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+04/24/2023 07:29:17 - WARNING - datasets.fingerprint - Parameter 'function'=<function main.<locals>.preprocess_function at 0x7f1e89a909d0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+04/24/2023 07:29:37 - INFO - __main__ - Sample 11 of the training set: {'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'input_ids': [0, 128, 282, 5, 13629, 251, 12, 27861, 451, 6402, 156, 129, 22948, 2402, 19521, 895, 2586, 12259, 28585, 108, 5, 13629, 400, 4860, 12, 35336, 17283, 33296, 338, 19613, 116, 50264, 6, 1437, 251, 4472, 451, 6402, 156, 856, 895, 4245, 108, 5262, 2402, 6735, 12259, 28585, 108, 5, 13629, 400, 33296, 338, 19613, 4, 1437, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 1, 'mask_pos': [31]}.
+04/24/2023 07:29:46 - INFO - __main__ - ***** Running training *****
+04/24/2023 07:29:46 - INFO - __main__ -   Num examples = 48
+04/24/2023 07:29:46 - INFO - __main__ -   Num Epochs = 167
+04/24/2023 07:29:46 - INFO - __main__ -   Instantaneous batch size per device = 8
+04/24/2023 07:29:46 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+04/24/2023 07:29:46 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/24/2023 07:29:46 - INFO - __main__ -   Total optimization steps = 1000
+04/24/2023 07:29:49 - INFO - __main__ - step 10: loss: 9.797421807888895e-05
+04/24/2023 07:29:52 - INFO - __main__ - step 20: loss: 1.4178600395098329e-05
+04/24/2023 07:29:55 - INFO - __main__ - step 30: loss: 3.471977834124118e-06
+04/24/2023 07:29:58 - INFO - __main__ - step 40: loss: 4.246843673172407e-06
+04/24/2023 07:30:01 - INFO - __main__ - step 50: loss: 4.1946918827306945e-06
+04/24/2023 07:30:04 - INFO - __main__ - step 60: loss: 4.164886377111543e-06
+04/24/2023 07:30:07 - INFO - __main__ - step 70: loss: 3.680597046695766e-06
+04/24/2023 07:30:10 - INFO - __main__ - step 80: loss: 1.6391296639994835e-06
+04/24/2023 07:30:13 - INFO - __main__ - step 90: loss: 3.2708110211387975e-06
+04/24/2023 07:30:16 - INFO - __main__ - step 100: loss: 4.78329457109794e-06
+04/24/2023 07:30:17 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:30:17 - INFO - __main__ - step 100: {'accuracy': 0.3958333333333333}
+04/24/2023 07:30:24 - INFO - __main__ - step 110: loss: 4.977006028639153e-06
+04/24/2023 07:30:27 - INFO - __main__ - step 120: loss: 3.866869519697502e-06
+04/24/2023 07:30:30 - INFO - __main__ - step 130: loss: 1.944604036907549e-06
+04/24/2023 07:30:33 - INFO - __main__ - step 140: loss: 2.9131820156180765e-06
+04/24/2023 07:30:36 - INFO - __main__ - step 150: loss: 3.3006167541316245e-06
+04/24/2023 07:30:39 - INFO - __main__ - step 160: loss: 3.39747202815488e-06
+04/24/2023 07:30:42 - INFO - __main__ - step 170: loss: 2.6747636638901895e-06
+04/24/2023 07:30:45 - INFO - __main__ - step 180: loss: 4.187241302133771e-06
+04/24/2023 07:30:48 - INFO - __main__ - step 190: loss: 5.207990398048423e-06
+04/24/2023 07:30:51 - INFO - __main__ - step 200: loss: 2.600257175799925e-06
+04/24/2023 07:30:52 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:30:52 - INFO - __main__ - step 200: {'accuracy': 0.375}
+04/24/2023 07:30:55 - INFO - __main__ - step 210: loss: 4.000984972662991e-06
+04/24/2023 07:30:58 - INFO - __main__ - step 220: loss: 1.922252067743102e-06
+04/24/2023 07:31:01 - INFO - __main__ - step 230: loss: 2.890830728574656e-06
+04/24/2023 07:31:04 - INFO - __main__ - step 240: loss: 3.136705799988704e-06
+04/24/2023 07:31:07 - INFO - __main__ - step 250: loss: 2.637510988279246e-06
+04/24/2023 07:31:10 - INFO - __main__ - step 260: loss: 2.41399311562418e-06
+04/24/2023 07:31:13 - INFO - __main__ - step 270: loss: 2.6300592708139447e-06
+04/24/2023 07:31:16 - INFO - __main__ - step 280: loss: 1.7881413896247977e-06
+04/24/2023 07:31:19 - INFO - __main__ - step 290: loss: 1.6018761925806757e-06
+04/24/2023 07:31:22 - INFO - __main__ - step 300: loss: 2.779071792247123e-06
+04/24/2023 07:31:22 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:31:22 - INFO - __main__ - step 300: {'accuracy': 0.375}
+04/24/2023 07:31:26 - INFO - __main__ - step 310: loss: 2.235178499176982e-06
+04/24/2023 07:31:29 - INFO - __main__ - step 320: loss: 2.741818889262504e-06
+04/24/2023 07:31:32 - INFO - __main__ - step 330: loss: 1.996758783207042e-06
+04/24/2023 07:31:35 - INFO - __main__ - step 340: loss: 2.86847921415756e-06
+04/24/2023 07:31:38 - INFO - __main__ - step 350: loss: 2.3916397822176805e-06
+04/24/2023 07:31:41 - INFO - __main__ - step 360: loss: 3.255922138123424e-06
+04/24/2023 07:31:44 - INFO - __main__ - step 370: loss: 2.644960204634117e-06
+04/24/2023 07:31:47 - INFO - __main__ - step 380: loss: 1.8030426645054831e-06
+04/24/2023 07:31:50 - INFO - __main__ - step 390: loss: 4.2170454435108695e-06
+04/24/2023 07:31:53 - INFO - __main__ - step 400: loss: 2.5108511181315407e-06
+04/24/2023 07:31:53 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:31:53 - INFO - __main__ - step 400: {'accuracy': 0.375}
+04/24/2023 07:31:56 - INFO - __main__ - step 410: loss: 2.637510078784544e-06
+04/24/2023 07:31:59 - INFO - __main__ - step 420: loss: 2.0787151697732043e-06
+04/24/2023 07:32:02 - INFO - __main__ - step 430: loss: 1.7583391809239401e-06
+04/24/2023 07:32:05 - INFO - __main__ - step 440: loss: 2.3320360469369916e-06
+04/24/2023 07:32:08 - INFO - __main__ - step 450: loss: 1.4975680642237421e-06
+04/24/2023 07:32:11 - INFO - __main__ - step 460: loss: 3.6060962429473875e-06
+04/24/2023 07:32:14 - INFO - __main__ - step 470: loss: 1.5571731637464836e-06
+04/24/2023 07:32:17 - INFO - __main__ - step 480: loss: 1.385809241583047e-06
+04/24/2023 07:32:20 - INFO - __main__ - step 490: loss: 2.1457701677718433e-06
+04/24/2023 07:32:23 - INFO - __main__ - step 500: loss: 2.034011458817986e-06
+04/24/2023 07:32:24 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:32:24 - INFO - __main__ - step 500: {'accuracy': 0.3333333333333333}
+04/24/2023 07:32:27 - INFO - __main__ - step 510: loss: 2.205377541031339e-06
+04/24/2023 07:32:30 - INFO - __main__ - step 520: loss: 2.3990910449356306e-06
+04/24/2023 07:32:33 - INFO - __main__ - step 530: loss: 1.6763826806709403e-06
+04/24/2023 07:32:36 - INFO - __main__ - step 540: loss: 1.7955920839085593e-06
+04/24/2023 07:32:39 - INFO - __main__ - step 550: loss: 1.4603157296733116e-06
+04/24/2023 07:32:42 - INFO - __main__ - step 560: loss: 2.6151587917411234e-06
+04/24/2023 07:32:45 - INFO - __main__ - step 570: loss: 1.7657896478340263e-06
+04/24/2023 07:32:48 - INFO - __main__ - step 580: loss: 1.7359872117594932e-06
+04/24/2023 07:32:51 - INFO - __main__ - step 590: loss: 1.05798312688421e-06
+04/24/2023 07:32:54 - INFO - __main__ - step 600: loss: 1.7508893961348804e-06
+04/24/2023 07:32:55 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:32:55 - INFO - __main__ - step 600: {'accuracy': 0.3125}
+04/24/2023 07:32:58 - INFO - __main__ - step 610: loss: 1.6689321000740165e-06
+04/24/2023 07:33:01 - INFO - __main__ - step 620: loss: 2.5928072773240274e-06
+04/24/2023 07:33:04 - INFO - __main__ - step 630: loss: 2.5183005618600873e-06
+04/24/2023 07:33:07 - INFO - __main__ - step 640: loss: 2.0116608538955916e-06
+04/24/2023 07:33:10 - INFO - __main__ - step 650: loss: 1.728537995404622e-06
+04/24/2023 07:33:13 - INFO - __main__ - step 660: loss: 2.0042091364302905e-06
+04/24/2023 07:33:16 - INFO - __main__ - step 670: loss: 1.8104930177287315e-06
+04/24/2023 07:33:19 - INFO - __main__ - step 680: loss: 7.823114174243528e-07
+04/24/2023 07:33:22 - INFO - __main__ - step 690: loss: 2.1755729449068895e-06
+04/24/2023 07:33:25 - INFO - __main__ - step 700: loss: 1.4826670167167322e-06
+04/24/2023 07:33:26 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:33:26 - INFO - __main__ - step 700: {'accuracy': 0.3541666666666667}
+04/24/2023 07:33:29 - INFO - __main__ - step 710: loss: 5.006823812436778e-06
+04/24/2023 07:33:32 - INFO - __main__ - step 720: loss: 1.1920938050025143e-06
+04/24/2023 07:33:35 - INFO - __main__ - step 730: loss: 1.922252522490453e-06
+04/24/2023 07:33:38 - INFO - __main__ - step 740: loss: 1.8253965663461713e-06
+04/24/2023 07:33:41 - INFO - __main__ - step 750: loss: 2.0340107766969595e-06
+04/24/2023 07:33:44 - INFO - __main__ - step 760: loss: 2.2351803181663854e-06
+04/24/2023 07:33:47 - INFO - __main__ - step 770: loss: 1.6763823396104272e-06
+04/24/2023 07:33:50 - INFO - __main__ - step 780: loss: 1.1473902077341336e-06
+04/24/2023 07:33:53 - INFO - __main__ - step 790: loss: 1.1548409020178951e-06
+04/24/2023 07:33:56 - INFO - __main__ - step 800: loss: 5.811454570903152e-07
+04/24/2023 07:33:56 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:33:56 - INFO - __main__ - step 800: {'accuracy': 0.375}
+04/24/2023 07:33:59 - INFO - __main__ - step 810: loss: 7.674101993870863e-07
+04/24/2023 07:34:02 - INFO - __main__ - step 820: loss: 5.736949901802291e-07
+04/24/2023 07:34:05 - INFO - __main__ - step 830: loss: 8.493666427966673e-07
+04/24/2023 07:34:08 - INFO - __main__ - step 840: loss: 6.929042228875915e-07
+04/24/2023 07:34:11 - INFO - __main__ - step 850: loss: 7.748608936708479e-07
+04/24/2023 07:34:14 - INFO - __main__ - step 860: loss: 7.078055546116957e-07
+04/24/2023 07:34:17 - INFO - __main__ - step 870: loss: 8.195643772523908e-07
+04/24/2023 07:34:20 - INFO - __main__ - step 880: loss: 1.907352725538658e-06
+04/24/2023 07:34:24 - INFO - __main__ - step 890: loss: 9.015211048790661e-07
+04/24/2023 07:34:27 - INFO - __main__ - step 900: loss: 6.407501587091247e-07
+04/24/2023 07:34:27 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:34:27 - INFO - __main__ - step 900: {'accuracy': 0.375}
+04/24/2023 07:34:30 - INFO - __main__ - step 910: loss: 6.929042797310103e-07
+04/24/2023 07:34:33 - INFO - __main__ - step 920: loss: 6.854537559775054e-07
+04/24/2023 07:34:36 - INFO - __main__ - step 930: loss: 8.344654247594008e-07
+04/24/2023 07:34:39 - INFO - __main__ - step 940: loss: 9.164219818558195e-07
+04/24/2023 07:34:42 - INFO - __main__ - step 950: loss: 9.164220386992383e-07
+04/24/2023 07:34:45 - INFO - __main__ - step 960: loss: 9.164220955426572e-07
+04/24/2023 07:34:48 - INFO - __main__ - step 970: loss: 6.482007961494674e-07
+04/24/2023 07:34:51 - INFO - __main__ - step 980: loss: 9.462245316171902e-07
+04/24/2023 07:34:54 - INFO - __main__ - step 990: loss: 7.599595619467436e-07
+04/24/2023 07:34:57 - INFO - __main__ - step 1000: loss: 8.568172233935911e-07
+04/24/2023 07:34:58 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:34:58 - INFO - __main__ - step 1000: {'accuracy': 0.3958333333333333}
+04/24/2023 07:34:58 - INFO - __main__ - early stop at step 100, metric: 0.3958333333333333
+04/24/2023 07:37:03 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:37:03 - INFO - __main__ - test_m: {'accuracy': 0.3241976566479878}
+04/24/2023 07:39:03 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/mnli/default_experiment-1-0.arrow
+04/24/2023 07:39:03 - INFO - __main__ - test_mm: {'accuracy': 0.33716436126932464}

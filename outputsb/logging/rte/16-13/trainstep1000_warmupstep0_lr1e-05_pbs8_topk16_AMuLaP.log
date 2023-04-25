@@ -1,0 +1,141 @@
+04/24/2023 00:19:52 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+Use FP16 precision: False
+
+04/24/2023 00:19:53 - WARNING - datasets.builder - Using custom data configuration default-9d900e789fc7d9c5
+04/24/2023 00:20:17 - WARNING - datasets.fingerprint - Parameter 'function'=<function main.<locals>.preprocess_function at 0x7fc4f032e1f0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+04/24/2023 00:20:17 - WARNING - __main__ - Input exceeds max_length limit: <s>"Scientists have uncovered soft bone tissue of a Tyrannosaurus Rex known as MOR 1125, found in a sandstone formation in Montana. MOR 1125 was 18 years old when it died, 65 million years ago. Similar tissue of a dinosaur has never been found before, as all remains found until now were fosilized. The tissue still contains microscopic structures resembling bloodvessels and cells. The comparison between the structures found in the T-rex and a modern day Ostrich shows a remarkable similarity. The results have been duplicated with an 80-million-year-old hadrosaur and two other tyrannosaurs. The discovery was reported in today's issue of Science. Results similar to the popular film ""Jurassic park"" are unlikely, as the recovery of DNA from the tissue is improbable. The results remain astounding, however, and tests with antibodies that react to collagen shows the tissue may still contain proteins. ""Ultimately if we could establish chemical composition, we would have insights into all kinds of things: diet, sexual maturity, whether the specimen is the male or female."", paleontologist Hans-Dieter Sues said.?<mask>, paleontologist Hans-Dieter Sues and other scientists discovered a T Rex bone in Montana.</s>
+04/24/2023 00:20:18 - INFO - __main__ - Sample 11 of the training set: {'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'input_ids': [0, 113, 3750, 5, 19698, 4767, 9, 5, 343, 6, 1577, 4306, 27550, 876, 6, 277, 650, 1139, 18621, 28817, 30, 5, 343, 6, 16, 10, 1406, 8376, 6381, 142, 9, 63, 23223, 3914, 281, 6, 50, 41039, 40693, 1295, 14002, 60, 113, 8934, 156, 66, 9, 769, 12080, 15, 61, 5, 6739, 33, 3831, 3451, 187, 1198, 12, 34809, 811, 498, 4, 116, 50264, 6, 22, 1000, 4306, 27550, 876, 16, 10, 1406, 8376, 13003, 142, 9, 63, 23223, 3914, 281, 6, 50, 11291, 14002, 72, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 1, 'mask_pos': [64]}.
+04/24/2023 00:20:32 - INFO - __main__ - ***** Running training *****
+04/24/2023 00:20:32 - INFO - __main__ -   Num examples = 32
+04/24/2023 00:20:32 - INFO - __main__ -   Num Epochs = 250
+04/24/2023 00:20:32 - INFO - __main__ -   Instantaneous batch size per device = 8
+04/24/2023 00:20:32 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+04/24/2023 00:20:32 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/24/2023 00:20:32 - INFO - __main__ -   Total optimization steps = 1000
+04/24/2023 00:20:35 - INFO - __main__ - step 10: loss: 0.00240605347789824
+04/24/2023 00:20:38 - INFO - __main__ - step 20: loss: 0.0011562941363081336
+04/24/2023 00:20:41 - INFO - __main__ - step 30: loss: 0.0005470806499943137
+04/24/2023 00:20:44 - INFO - __main__ - step 40: loss: 0.0006381367566064
+04/24/2023 00:20:47 - INFO - __main__ - step 50: loss: 0.00017682327597867697
+04/24/2023 00:20:50 - INFO - __main__ - step 60: loss: 0.0001436996244592592
+04/24/2023 00:20:53 - INFO - __main__ - step 70: loss: 0.00012483631144277751
+04/24/2023 00:20:56 - INFO - __main__ - step 80: loss: 9.006049367599189e-05
+04/24/2023 00:20:59 - INFO - __main__ - step 90: loss: 0.0001062140945577994
+04/24/2023 00:21:02 - INFO - __main__ - step 100: loss: 0.0001487976114731282
+04/24/2023 00:21:02 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:21:02 - INFO - __main__ - step 100: {'accuracy': 0.59375}
+04/24/2023 00:21:09 - INFO - __main__ - step 110: loss: 7.486729009542614e-05
+04/24/2023 00:21:12 - INFO - __main__ - step 120: loss: 8.480793621856719e-05
+04/24/2023 00:21:15 - INFO - __main__ - step 130: loss: 9.77362651610747e-05
+04/24/2023 00:21:18 - INFO - __main__ - step 140: loss: 6.252016464713961e-05
+04/24/2023 00:21:21 - INFO - __main__ - step 150: loss: 4.005605660495348e-05
+04/24/2023 00:21:24 - INFO - __main__ - step 160: loss: 5.947297904640436e-05
+04/24/2023 00:21:27 - INFO - __main__ - step 170: loss: 0.00010501037468202412
+04/24/2023 00:21:30 - INFO - __main__ - step 180: loss: 5.50319928152021e-05
+04/24/2023 00:21:33 - INFO - __main__ - step 190: loss: 3.086093784077093e-05
+04/24/2023 00:21:36 - INFO - __main__ - step 200: loss: 3.521226244629361e-05
+04/24/2023 00:21:36 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:21:36 - INFO - __main__ - step 200: {'accuracy': 0.59375}
+04/24/2023 00:21:39 - INFO - __main__ - step 210: loss: 5.6462868087692186e-05
+04/24/2023 00:21:43 - INFO - __main__ - step 220: loss: 3.361031485837884e-05
+04/24/2023 00:21:46 - INFO - __main__ - step 230: loss: 5.584648170042783e-05
+04/24/2023 00:21:49 - INFO - __main__ - step 240: loss: 4.3758609535871074e-05
+04/24/2023 00:21:52 - INFO - __main__ - step 250: loss: 2.4192388082155958e-05
+04/24/2023 00:21:55 - INFO - __main__ - step 260: loss: 4.961544618709013e-05
+04/24/2023 00:21:58 - INFO - __main__ - step 270: loss: 3.3289928978774697e-05
+04/24/2023 00:22:01 - INFO - __main__ - step 280: loss: 3.128566459054127e-05
+04/24/2023 00:22:04 - INFO - __main__ - step 290: loss: 2.4497938284184784e-05
+04/24/2023 00:22:07 - INFO - __main__ - step 300: loss: 5.53712307009846e-05
+04/24/2023 00:22:07 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:22:07 - INFO - __main__ - step 300: {'accuracy': 0.40625}
+04/24/2023 00:22:10 - INFO - __main__ - step 310: loss: 2.7828629754367284e-05
+04/24/2023 00:22:13 - INFO - __main__ - step 320: loss: 3.703795300680213e-05
+04/24/2023 00:22:16 - INFO - __main__ - step 330: loss: 2.4795954232104123e-05
+04/24/2023 00:22:19 - INFO - __main__ - step 340: loss: 2.877537190215662e-05
+04/24/2023 00:22:22 - INFO - __main__ - step 350: loss: 3.6360594094730914e-05
+04/24/2023 00:22:25 - INFO - __main__ - step 360: loss: 2.1152474801056087e-05
+04/24/2023 00:22:28 - INFO - __main__ - step 370: loss: 2.7813646738650277e-05
+04/24/2023 00:22:31 - INFO - __main__ - step 380: loss: 2.0936480723321438e-05
+04/24/2023 00:22:34 - INFO - __main__ - step 390: loss: 2.8841837774962187e-05
+04/24/2023 00:22:37 - INFO - __main__ - step 400: loss: 1.9893277567462064e-05
+04/24/2023 00:22:37 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:22:37 - INFO - __main__ - step 400: {'accuracy': 0.5}
+04/24/2023 00:22:40 - INFO - __main__ - step 410: loss: 3.913233376806602e-05
+04/24/2023 00:22:43 - INFO - __main__ - step 420: loss: 2.137628325726837e-05
+04/24/2023 00:22:46 - INFO - __main__ - step 430: loss: 1.731535667204298e-05
+04/24/2023 00:22:49 - INFO - __main__ - step 440: loss: 1.3679411495104432e-05
+04/24/2023 00:22:52 - INFO - __main__ - step 450: loss: 1.4156237739371136e-05
+04/24/2023 00:22:55 - INFO - __main__ - step 460: loss: 2.1212308638496324e-05
+04/24/2023 00:22:58 - INFO - __main__ - step 470: loss: 1.5713423636043444e-05
+04/24/2023 00:23:01 - INFO - __main__ - step 480: loss: 3.887997445417568e-05
+04/24/2023 00:23:04 - INFO - __main__ - step 490: loss: 1.0691645002225414e-05
+04/24/2023 00:23:07 - INFO - __main__ - step 500: loss: 1.8671431462280452e-05
+04/24/2023 00:23:08 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:23:08 - INFO - __main__ - step 500: {'accuracy': 0.375}
+04/24/2023 00:23:11 - INFO - __main__ - step 510: loss: 2.3298804080695845e-05
+04/24/2023 00:23:14 - INFO - __main__ - step 520: loss: 1.3791180208500009e-05
+04/24/2023 00:23:17 - INFO - __main__ - step 530: loss: 1.58253860718105e-05
+04/24/2023 00:23:20 - INFO - __main__ - step 540: loss: 4.857664680457674e-05
+04/24/2023 00:23:23 - INFO - __main__ - step 550: loss: 1.4513932001136709e-05
+04/24/2023 00:23:26 - INFO - __main__ - step 560: loss: 1.1228111361560877e-05
+04/24/2023 00:23:29 - INFO - __main__ - step 570: loss: 9.879527169687208e-06
+04/24/2023 00:23:32 - INFO - __main__ - step 580: loss: 7.599624495924218e-06
+04/24/2023 00:23:35 - INFO - __main__ - step 590: loss: 1.748673639667686e-05
+04/24/2023 00:23:38 - INFO - __main__ - step 600: loss: 7.1302338255918585e-06
+04/24/2023 00:23:38 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:23:38 - INFO - __main__ - step 600: {'accuracy': 0.4375}
+04/24/2023 00:23:41 - INFO - __main__ - step 610: loss: 1.9573080862755887e-05
+04/24/2023 00:23:44 - INFO - __main__ - step 620: loss: 1.5914680261630565e-05
+04/24/2023 00:23:47 - INFO - __main__ - step 630: loss: 1.464053821109701e-05
+04/24/2023 00:23:50 - INFO - __main__ - step 640: loss: 3.4631586458999664e-05
+04/24/2023 00:23:53 - INFO - __main__ - step 650: loss: 1.1377123882994056e-05
+04/24/2023 00:23:56 - INFO - __main__ - step 660: loss: 6.9067168624314945e-06
+04/24/2023 00:23:59 - INFO - __main__ - step 670: loss: 1.332186184299644e-05
+04/24/2023 00:24:02 - INFO - __main__ - step 680: loss: 1.191357023344608e-05
+04/24/2023 00:24:05 - INFO - __main__ - step 690: loss: 1.5393143257824704e-05
+04/24/2023 00:24:08 - INFO - __main__ - step 700: loss: 1.0006197953771334e-05
+04/24/2023 00:24:09 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:24:09 - INFO - __main__ - step 700: {'accuracy': 0.53125}
+04/24/2023 00:24:12 - INFO - __main__ - step 710: loss: 1.9647523004096e-05
+04/24/2023 00:24:15 - INFO - __main__ - step 720: loss: 1.8149905372411013e-05
+04/24/2023 00:24:18 - INFO - __main__ - step 730: loss: 9.194074664264917e-06
+04/24/2023 00:24:21 - INFO - __main__ - step 740: loss: 3.265809573349543e-05
+04/24/2023 00:24:24 - INFO - __main__ - step 750: loss: 1.67565667652525e-05
+04/24/2023 00:24:27 - INFO - __main__ - step 760: loss: 8.873686965671368e-06
+04/24/2023 00:24:30 - INFO - __main__ - step 770: loss: 1.194339529320132e-05
+04/24/2023 00:24:33 - INFO - __main__ - step 780: loss: 7.67414258007193e-06
+04/24/2023 00:24:36 - INFO - __main__ - step 790: loss: 9.000366844702512e-06
+04/24/2023 00:24:39 - INFO - __main__ - step 800: loss: 2.3872906240285374e-05
+04/24/2023 00:24:39 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:24:39 - INFO - __main__ - step 800: {'accuracy': 0.40625}
+04/24/2023 00:24:42 - INFO - __main__ - step 810: loss: 9.55920222622808e-06
+04/24/2023 00:24:45 - INFO - __main__ - step 820: loss: 2.5594050384825096e-05
+04/24/2023 00:24:48 - INFO - __main__ - step 830: loss: 7.74120053392835e-06
+04/24/2023 00:24:51 - INFO - __main__ - step 840: loss: 1.091517879103776e-05
+04/24/2023 00:24:54 - INFO - __main__ - step 850: loss: 1.4089199794398155e-05
+04/24/2023 00:24:57 - INFO - __main__ - step 860: loss: 1.4476614524028264e-05
+04/24/2023 00:25:00 - INFO - __main__ - step 870: loss: 7.696491593378596e-06
+04/24/2023 00:25:03 - INFO - __main__ - step 880: loss: 1.6831034372444265e-05
+04/24/2023 00:25:06 - INFO - __main__ - step 890: loss: 1.0587360520730726e-05
+04/24/2023 00:25:09 - INFO - __main__ - step 900: loss: 9.84974940365646e-06
+04/24/2023 00:25:10 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:25:10 - INFO - __main__ - step 900: {'accuracy': 0.5}
+04/24/2023 00:25:13 - INFO - __main__ - step 910: loss: 8.702327249920927e-06
+04/24/2023 00:25:16 - INFO - __main__ - step 920: loss: 9.551703442411963e-06
+04/24/2023 00:25:19 - INFO - __main__ - step 930: loss: 1.1973190339631401e-05
+04/24/2023 00:25:22 - INFO - __main__ - step 940: loss: 6.638520062551834e-06
+04/24/2023 00:25:25 - INFO - __main__ - step 950: loss: 1.81351242645178e-05
+04/24/2023 00:25:28 - INFO - __main__ - step 960: loss: 1.8291526430402882e-05
+04/24/2023 00:25:31 - INFO - __main__ - step 970: loss: 1.0863026545848697e-05
+04/24/2023 00:25:34 - INFO - __main__ - step 980: loss: 1.479701586504234e-05
+04/24/2023 00:25:37 - INFO - __main__ - step 990: loss: 7.927453225420322e-06
+04/24/2023 00:25:40 - INFO - __main__ - step 1000: loss: 1.4044516319700051e-05
+04/24/2023 00:25:40 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:25:40 - INFO - __main__ - step 1000: {'accuracy': 0.5}
+04/24/2023 00:25:40 - INFO - __main__ - early stop at step 100, metric: 0.59375
+04/24/2023 00:25:49 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/rte/default_experiment-1-0.arrow
+04/24/2023 00:25:49 - INFO - __main__ - test: {'accuracy': 0.5270758122743683}
