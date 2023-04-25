@@ -1,0 +1,140 @@
+04/22/2023 02:54:11 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+Use FP16 precision: False
+
+04/22/2023 02:54:13 - WARNING - datasets.builder - Using custom data configuration default-5ef07115a2258c6c
+04/22/2023 02:54:40 - WARNING - datasets.fingerprint - Parameter 'function'=<function main.<locals>.preprocess_function at 0x7efc8c0ab1f0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+04/22/2023 02:54:41 - INFO - __main__ - Sample 11 of the training set: {'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'input_ids': [0, 100, 14216, 10, 205, 34998, 31, 42, 14397, 4, 152, 16, 50264, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 0, 'mask_pos': [12]}.
+04/22/2023 02:54:57 - INFO - __main__ - ***** Running training *****
+04/22/2023 02:54:57 - INFO - __main__ -   Num examples = 32
+04/22/2023 02:54:57 - INFO - __main__ -   Num Epochs = 250
+04/22/2023 02:54:57 - INFO - __main__ -   Instantaneous batch size per device = 8
+04/22/2023 02:54:57 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+04/22/2023 02:54:57 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/22/2023 02:54:57 - INFO - __main__ -   Total optimization steps = 1000
+04/22/2023 02:55:03 - INFO - __main__ - step 10: loss: 0.003866116516292095
+04/22/2023 02:55:10 - INFO - __main__ - step 20: loss: 9.141923328570556e-06
+04/22/2023 02:55:16 - INFO - __main__ - step 30: loss: 1.8738661310635507e-05
+04/22/2023 02:55:22 - INFO - __main__ - step 40: loss: 9.387793397763744e-06
+04/22/2023 02:55:29 - INFO - __main__ - step 50: loss: 9.402686373505276e-06
+04/22/2023 02:55:35 - INFO - __main__ - step 60: loss: 1.1354820344422478e-05
+04/22/2023 02:55:42 - INFO - __main__ - step 70: loss: 7.286700565600768e-06
+04/22/2023 02:55:48 - INFO - __main__ - step 80: loss: 9.954047527571674e-06
+04/22/2023 02:55:55 - INFO - __main__ - step 90: loss: 1.0430914699099958e-05
+04/22/2023 02:56:02 - INFO - __main__ - step 100: loss: 6.0200918596819974e-06
+04/22/2023 02:56:02 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 02:56:02 - INFO - __main__ - step 100: {'matthews_correlation': 0.0}
+04/22/2023 02:56:15 - INFO - __main__ - step 110: loss: 7.74864383856766e-06
+04/22/2023 02:56:21 - INFO - __main__ - step 120: loss: 1.0810894309543073e-05
+04/22/2023 02:56:28 - INFO - __main__ - step 130: loss: 4.425657152751228e-06
+04/22/2023 02:56:35 - INFO - __main__ - step 140: loss: 1.1757112588384189e-05
+04/22/2023 02:56:42 - INFO - __main__ - step 150: loss: 6.8471258600766305e-06
+04/22/2023 02:56:48 - INFO - __main__ - step 160: loss: 1.1503831046866253e-05
+04/22/2023 02:56:55 - INFO - __main__ - step 170: loss: 6.958875928830821e-06
+04/22/2023 02:57:02 - INFO - __main__ - step 180: loss: 6.429876975744264e-06
+04/22/2023 02:57:09 - INFO - __main__ - step 190: loss: 1.428324594598962e-05
+04/22/2023 02:57:16 - INFO - __main__ - step 200: loss: 4.567219093587482e-06
+04/22/2023 02:57:17 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 02:57:17 - INFO - __main__ - step 200: {'matthews_correlation': 0.0}
+04/22/2023 02:57:23 - INFO - __main__ - step 210: loss: 8.270199941762257e-06
+04/22/2023 02:57:30 - INFO - __main__ - step 220: loss: 1.7800000932766125e-05
+04/22/2023 02:57:37 - INFO - __main__ - step 230: loss: 5.32718695467338e-06
+04/22/2023 02:57:44 - INFO - __main__ - step 240: loss: 4.574670583679108e-06
+04/22/2023 02:57:51 - INFO - __main__ - step 250: loss: 4.887604518444277e-06
+04/22/2023 02:57:58 - INFO - __main__ - step 260: loss: 5.699718713003676e-06
+04/22/2023 02:58:05 - INFO - __main__ - step 270: loss: 4.9322993618261535e-06
+04/22/2023 02:58:12 - INFO - __main__ - step 280: loss: 4.477810762182344e-06
+04/22/2023 02:58:19 - INFO - __main__ - step 290: loss: 5.796593086415669e-06
+04/22/2023 02:58:26 - INFO - __main__ - step 300: loss: 2.905732117142179e-06
+04/22/2023 02:58:27 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 02:58:27 - INFO - __main__ - step 300: {'matthews_correlation': 0.0}
+04/22/2023 02:58:34 - INFO - __main__ - step 310: loss: 5.356988367566373e-06
+04/22/2023 02:58:41 - INFO - __main__ - step 320: loss: 4.641728537535528e-06
+04/22/2023 02:58:48 - INFO - __main__ - step 330: loss: 4.50016477770987e-06
+04/22/2023 02:58:55 - INFO - __main__ - step 340: loss: 5.9381432038208e-06
+04/22/2023 02:59:02 - INFO - __main__ - step 350: loss: 4.373504452814814e-06
+04/22/2023 02:59:10 - INFO - __main__ - step 360: loss: 9.358042007079348e-06
+04/22/2023 02:59:17 - INFO - __main__ - step 370: loss: 4.7758394430275075e-06
+04/22/2023 02:59:24 - INFO - __main__ - step 380: loss: 5.416600288299378e-06
+04/22/2023 02:59:31 - INFO - __main__ - step 390: loss: 4.969554993294878e-06
+04/22/2023 02:59:38 - INFO - __main__ - step 400: loss: 3.390023493921035e-06
+04/22/2023 02:59:39 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 02:59:39 - INFO - __main__ - step 400: {'matthews_correlation': 0.0}
+04/22/2023 02:59:46 - INFO - __main__ - step 410: loss: 7.458072104782332e-06
+04/22/2023 02:59:53 - INFO - __main__ - step 420: loss: 5.438947482616641e-06
+04/22/2023 03:00:00 - INFO - __main__ - step 430: loss: 8.165976396412589e-06
+04/22/2023 03:00:07 - INFO - __main__ - step 440: loss: 3.620993311415077e-06
+04/22/2023 03:00:15 - INFO - __main__ - step 450: loss: 4.269193595973775e-06
+04/22/2023 03:00:22 - INFO - __main__ - step 460: loss: 5.848761247762013e-06
+04/22/2023 03:00:29 - INFO - __main__ - step 470: loss: 3.680601139421924e-06
+04/22/2023 03:00:36 - INFO - __main__ - step 480: loss: 2.913183379860129e-06
+04/22/2023 03:00:43 - INFO - __main__ - step 490: loss: 2.6673128559195902e-06
+04/22/2023 03:00:51 - INFO - __main__ - step 500: loss: 5.297396910464158e-06
+04/22/2023 03:00:51 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 03:00:51 - INFO - __main__ - step 500: {'matthews_correlation': 0.0}
+04/22/2023 03:00:59 - INFO - __main__ - step 510: loss: 2.98023928735347e-06
+04/22/2023 03:01:06 - INFO - __main__ - step 520: loss: 2.3394857180392137e-06
+04/22/2023 03:01:13 - INFO - __main__ - step 530: loss: 3.241010745114181e-06
+04/22/2023 03:01:20 - INFO - __main__ - step 540: loss: 2.2947831439523725e-06
+04/22/2023 03:01:27 - INFO - __main__ - step 550: loss: 2.8312272206676425e-06
+04/22/2023 03:01:35 - INFO - __main__ - step 560: loss: 3.069646709263907e-06
+04/22/2023 03:01:42 - INFO - __main__ - step 570: loss: 2.4586952349636704e-06
+04/22/2023 03:01:49 - INFO - __main__ - step 580: loss: 4.760945103043923e-06
+04/22/2023 03:01:56 - INFO - __main__ - step 590: loss: 3.1963120363798225e-06
+04/22/2023 03:02:03 - INFO - __main__ - step 600: loss: 6.1393120631692e-06
+04/22/2023 03:02:04 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 03:02:04 - INFO - __main__ - step 600: {'matthews_correlation': -0.1796053020267749}
+04/22/2023 03:02:11 - INFO - __main__ - step 610: loss: 1.9893072931154165e-06
+04/22/2023 03:02:18 - INFO - __main__ - step 620: loss: 3.077095925618778e-06
+04/22/2023 03:02:26 - INFO - __main__ - step 630: loss: 2.8014235340378946e-06
+04/22/2023 03:02:33 - INFO - __main__ - step 640: loss: 3.919020855391864e-06
+04/22/2023 03:02:40 - INFO - __main__ - step 650: loss: 2.5332024051749613e-06
+04/22/2023 03:02:47 - INFO - __main__ - step 660: loss: 3.0621954465459567e-06
+04/22/2023 03:02:54 - INFO - __main__ - step 670: loss: 1.8179435983256553e-06
+04/22/2023 03:03:02 - INFO - __main__ - step 680: loss: 1.817944166759844e-06
+04/22/2023 03:03:09 - INFO - __main__ - step 690: loss: 3.5762893730861833e-06
+04/22/2023 03:03:16 - INFO - __main__ - step 700: loss: 1.7508883729533409e-06
+04/22/2023 03:03:17 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 03:03:17 - INFO - __main__ - step 700: {'matthews_correlation': -0.1796053020267749}
+04/22/2023 03:03:24 - INFO - __main__ - step 710: loss: 2.7492696972331032e-06
+04/22/2023 03:03:31 - INFO - __main__ - step 720: loss: 2.73437080977601e-06
+04/22/2023 03:03:38 - INFO - __main__ - step 730: loss: 6.459690666815732e-06
+04/22/2023 03:03:45 - INFO - __main__ - step 740: loss: 3.933927473553922e-06
+04/22/2023 03:03:53 - INFO - __main__ - step 750: loss: 3.255911451560678e-06
+04/22/2023 03:04:00 - INFO - __main__ - step 760: loss: 2.19792423195031e-06
+04/22/2023 03:04:07 - INFO - __main__ - step 770: loss: 2.7641713131743018e-06
+04/22/2023 03:04:14 - INFO - __main__ - step 780: loss: 2.026560878221062e-06
+04/22/2023 03:04:21 - INFO - __main__ - step 790: loss: 2.2947822344576707e-06
+04/22/2023 03:04:28 - INFO - __main__ - step 800: loss: 2.183023980251164e-06
+04/22/2023 03:04:29 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 03:04:29 - INFO - __main__ - step 800: {'matthews_correlation': -0.1796053020267749}
+04/22/2023 03:04:36 - INFO - __main__ - step 810: loss: 2.0563634279824328e-06
+04/22/2023 03:04:44 - INFO - __main__ - step 820: loss: 3.218657184334006e-06
+04/22/2023 03:04:51 - INFO - __main__ - step 830: loss: 3.740199872481753e-06
+04/22/2023 03:04:58 - INFO - __main__ - step 840: loss: 2.689665734578739e-06
+04/22/2023 03:05:05 - INFO - __main__ - step 850: loss: 2.607708438517875e-06
+04/22/2023 03:05:12 - INFO - __main__ - step 860: loss: 1.9073509065492544e-06
+04/22/2023 03:05:20 - INFO - __main__ - step 870: loss: 1.0281808044965146e-06
+04/22/2023 03:05:27 - INFO - __main__ - step 880: loss: 3.427285491852672e-06
+04/22/2023 03:05:34 - INFO - __main__ - step 890: loss: 2.2947822344576707e-06
+04/22/2023 03:05:41 - INFO - __main__ - step 900: loss: 3.2857133192010224e-06
+04/22/2023 03:05:42 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 03:05:42 - INFO - __main__ - step 900: {'matthews_correlation': -0.1796053020267749}
+04/22/2023 03:05:49 - INFO - __main__ - step 910: loss: 6.43740031591733e-06
+04/22/2023 03:05:56 - INFO - __main__ - step 920: loss: 1.4975680642237421e-06
+04/22/2023 03:06:03 - INFO - __main__ - step 930: loss: 1.7732400010572746e-06
+04/22/2023 03:06:11 - INFO - __main__ - step 940: loss: 2.2053754946682602e-06
+04/22/2023 03:06:18 - INFO - __main__ - step 950: loss: 2.3469374355045147e-06
+04/22/2023 03:06:25 - INFO - __main__ - step 960: loss: 3.1292502171709202e-06
+04/22/2023 03:06:32 - INFO - __main__ - step 970: loss: 1.952054162757122e-06
+04/22/2023 03:06:39 - INFO - __main__ - step 980: loss: 1.5720740975666558e-06
+04/22/2023 03:06:47 - INFO - __main__ - step 990: loss: 3.0994503958936548e-06
+04/22/2023 03:06:54 - INFO - __main__ - step 1000: loss: 1.6763822259235894e-06
+04/22/2023 03:06:55 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 03:06:55 - INFO - __main__ - step 1000: {'matthews_correlation': -0.1796053020267749}
+04/22/2023 03:06:55 - INFO - __main__ - early stop at step 100, metric: 0.0
+04/22/2023 03:07:26 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/cola/default_experiment-1-0.arrow
+04/22/2023 03:07:26 - INFO - __main__ - test: {'matthews_correlation': 0.013712849373137744}

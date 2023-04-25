@@ -1,0 +1,14 @@
+04/22/2023 00:58:57 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+Use FP16 precision: False
+
+04/22/2023 00:58:58 - WARNING - datasets.builder - Using custom data configuration default-eae9d87911c3124d
+04/22/2023 00:59:24 - WARNING - datasets.fingerprint - Parameter 'function'=<function main.<locals>.preprocess_function at 0x7ffab83e81f0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+04/22/2023 00:59:25 - INFO - __main__ - Sample 14 of the training set: {'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'input_ids': [0, 405, 95, 222, 295, 75, 1266, 203, 7, 162, 8, 702, 350, 30957, 7, 655, 120, 10, 946, 15, 36, 368, 28, 23979, 30, 43, 479, 85, 21, 50264, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 0, 'mask_pos': [29]}.
+04/22/2023 00:59:40 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/sst2/default_experiment-1-0.arrow
+04/22/2023 00:59:40 - INFO - __main__ - dev: {'accuracy': 0.875}
+04/22/2023 00:59:58 - INFO - /usr/local/lib/python3.9/dist-packages/datasets/metric.py - Removing /root/.cache/huggingface/metrics/glue/sst2/default_experiment-1-0.arrow
+04/22/2023 00:59:58 - INFO - __main__ - test: {'accuracy': 0.893348623853211}
